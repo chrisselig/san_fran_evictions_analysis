@@ -1,0 +1,27 @@
+# Environment Setup ----
+
+# Conda Environment Setup Instructions ----
+#  - Using an environment.yml file with conda
+#  - Key Terminal Commands:
+#
+#    conda env create -f 00_environment/environment_setup.yml
+#    conda env update --file 00_environment/environment_setup.yml --prune
+#    conda env export --name sanfran > envname.yml
+#    conda env remove --name sanfran
+#    conda env list
+
+name: sanfran
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.7
+  - pip
+  - pip:
+      # Core Data
+      - numpy
+      - pandas
+
+      # Visualization
+      - matplotlib
