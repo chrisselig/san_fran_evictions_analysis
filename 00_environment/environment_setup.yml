@@ -16,12 +16,25 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9.7
+  - python=3.8.8
   - pip
   - pip:
       # Core Data
-      - numpy
-      - pandas
+      - numpy==1.20.2
+      - pandas==1.2.2
 
       # Visualization
-      - matplotlib
+      - matplotlib==3.3.4
+
+      # EDA
+      - pandas-profiling
+      - ppscore==1.2.0
+      - pyjanitor==0.20.14
+
+      # Jupyter
+      - jupyterlab==3.0.13
+      - jupyterlab-server==2.4.0
+      - ipywidgets==7.6.3
+      - ipympl==0.7.0
+      - jupytext
+      - papermill==2.3.3
